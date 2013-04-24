@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">New Canuck</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="project_name">New Canuck</string>
+    <string name="title_activity_mission">Tour Mission</string>
+    <string name="title_activity_all_mission">All Missions</string>
+    <string name="title_activity_my_mission">My Missions</string>
+    <string name="title_activity_create_mission">New Mission</string>
+    <string name="title_activity_mission_page">Mission Page</string>
+    <string name="title_activity_add_feeling">Add Feeling</string>
+    <string name="title_activity_feeling_main">My Feeling</string>
+    <string name="title_activity_new_mission">New Mission</string>
+    <string name="title_activity_quiz_game">Quiz Game</string>
+    <string name="title_activity_quiz_options">Quiz Options</string>
+    <string name="title_activity_quiz_home">Quiz Game</string>
+    <string name="title_activity_quiz_report">Game Report</string>
+    <string name="title_activity_start_game">Start Game</string>
+    <string name="title_activity_comments">Comments</string>
+    <string name="title_activity_missions_in_map">Map</string>
+    <string name="title_activity_see_location">Map</string>
+    <string name="title_activity_record">Record</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rewards">Rewards</string>
+    <string name="title_activity_analysis">Analysis</string>
+    <string name="title_activity_growth_path">GrowthPath</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_upload_question">UploadQuestionActivity</string>
+
+</resources>

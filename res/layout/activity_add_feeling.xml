@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFeelingActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="How do you feel: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextFeeling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: "
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picture:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >	
+
+            <Button
+                android:id="@+id/buttonTakePic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Take a Picture" />
+
+            <Button
+                android:id="@+id/buttonChangePic"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageViewPicture"
+                android:text="change the picture" />
+
+            <ImageView
+                android:id="@+id/imageViewPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:layout_marginBottom="5dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewMissionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Mission Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewMission"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="300dp"
+            android:src="@drawable/default_img" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/titleDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Rating: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/titleDesc"
+                android:layout_toRightOf="@+id/titleDesc"
+                android:text="0.0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:text="More Comments"
+            android:textColor="#FFF"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/titleAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Address: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/titleAddress"
+                android:layout_toRightOf="@+id/titleAddress"
+                android:text="toronto" />
+
+            <Button
+                android:id="@+id/buttonMap"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/TextViewAddress"
+                android:background="@drawable/button"
+            	android:layout_marginTop="5dp"
+                android:text="Google Map"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:text="description" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonSeeMyFeeling"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="My Feeling"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonTakeTheMission"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Take the Mission"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/buttonComplete"
+                    android:layout_width="0dip"
+                    android:layout_height="45dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button"
+                    android:text="Complete"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonGiveUp"
+                    android:layout_width="0dip"
+                    android:layout_height="45dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/button"
+                    android:text="Give Up"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
